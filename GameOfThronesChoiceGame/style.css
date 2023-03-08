@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(black,red);
+    background-repeat: no-repeat;
+}
+header{
+    height: 10%;
+}
+h1{
+    color: white;
+    font-style: italic;
+}
+main{
+    height: 90%;
+    width: 30%;
+    padding: 20px;
+    overflow: hidden;
+}
+.picbox{
+    height: 50%;
+    margin-bottom: 8px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    background-color: black;
+    display: inline-block;
+    transition: 0.4s ease-out;
+    overflow: hidden;
+}
+.picbox:hover{
+    transform: scale(0.94);
+}
+.picbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 750px){
+    main{
+        width: 100%;
+    }
+}
+
