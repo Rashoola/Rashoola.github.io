@@ -43,9 +43,7 @@ main{
     left:50%;
     transform: translate(-50%);
 }
-.picbox:hover{
-    transform: scale(0.94);
-}
+
 .picbox img{
     height: 100%;
     width: 100%;
