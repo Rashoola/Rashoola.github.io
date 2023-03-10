@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(black,red);
+    background-image: linear-gradient(black,rgb(109,199,130),rgb(81,219,215));
     background-repeat: no-repeat;
 }
 header{
@@ -20,23 +20,28 @@ header{
 h1{
     color: white;
     font-style: italic;
+    text-align: center;
 }
 main{
-    height: 75%;
+    height: 60%;
     width: 30%;
     padding: 20px;
     overflow: hidden;
+    align-content: center;
 }
 .picbox{
     height: 50%;
     margin-bottom: 8px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    border: 10px solid transparent;
+    border: 5px solid white;
     background-color: black;
     display: inline-block;
     transition: 0.4s ease-out;
     overflow: hidden;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
 }
 .picbox:hover{
     transform: scale(0.94);
@@ -52,4 +57,5 @@ main{
         width: 100%;
     }
 }
+
 
